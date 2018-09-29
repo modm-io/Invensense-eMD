@@ -1,0 +1,364 @@
+INVENSENSE LICENSE AGREEMENT FOR EMBEDDED MOTIONAPPS™, EMBEDDED MOTIONDRIVERS,
+MOVEATV SOLUTION™, AND AAR™ LIBRARY
+
+IMPORTANT: PLEASE READ THE TERMS AND CONDITIONS OF THE FOLLOWING AGREEMENT
+CAREFULLY BEFORE DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING THE
+SOFTWARE, DEVELOPER KITS, REFERENCE DESIGNS, DOCUMENTATION, AND/OR ANY OTHER
+MATERIALS AVAILABLE AND DOWNLOADED BY YOU FROM INVENSENSE “DEVELOPERS CORNER”
+
+(www.invensense.com/developers) (“LICENSED MATERIALS”). THE LICENSED MATERIALS ARE FOR
+USE SOLELY AND EXCLUSIVELY WITH INVENSENSE PRODUCTS. IF YOU DO NOT AGREE TO ALL OF
+THE TERMS AND CONDITIONS OF THIS AGREEMENT, YOU MUST NOT DOWNLOAD, INSTALL, COPY,
+OR OTHERWISE USE THE LICENSED MATERIALS.
+
+The following License Agreement (“Agreement”) is a binding legal agreement between InvenSense,
+Inc. located at 1745 Technology Drive, Santa Clara, CA 95110 (“InvenSense”) and you (both the
+individual installing the Software and any single legal entity on behalf of which such individual is
+acting) (“Licensee”). By selecting “I ACCEPT” below, or by downloading, installing, copying or
+otherwise using the Licensed Materials, Licensee acknowledges that it, he or she has read all of the
+terms and conditions of this Agreement, understands them, and agrees to be bound by them.
+
+INVENSENSE LICENSE AGREEMENT FOR EMBEDDED
+MOTIONAPPS™, MOVEA TV SOLUTION, EMBEDDED
+MOTIONDRIVERS AND/OR AAR™ LIBRARY
+
+
+1. PURPOSE
+
+This Agreement provides the terms and conditions for Licensee’s licensing of the following
+InvenSense software libraries downloaded by Licensee: Embedded MotionApps™, Embedded
+MotionDrivers, MoveaTV Solution™, and/or AAR™ Library, and any related documentation (the
+“Documentation”) provided by or on behalf of InvenSense.
+
+
+2. DEFINITIONS
+
+2.1 “Binary Code” means those portions of Software that are provided to Licensee in binary or
+object code (i.e., machine readable) form.
+
+2.2 “Confidential Information” means (i) the Software, and any portions, components or sub-files
+thereof; (ii) the structure, sequence and organization of the Software and the concepts, methods of
+operations and ideas disclosed therein; (iii) any trade secrets of InvenSense or its affiliates or its or
+their suppliers relating to the Software; (iv) the Documentation, and (v) the terms and conditions of
+this Agreement.
+
+2.3 “Documentation” means the instructional documentation for the Software provided to Licensee
+by or on behalf of InvenSense.
+
+2.4 “InvenSense Product” means the InvenSense motion processing devices specified on Exhibit A
+that are purchased by Licensee.
+
+2.5 “Licensed Materials” means the Software and the Documentation.
+
+2.6 “Licensee Application(s)” means Licensee applications designed for complete sensor system on
+chip and microcontroller-based platforms that will incorporate the Software (in Binary Code only)
+solely for use with InvenSense Product(s) therein.
+
+2.7 “Modification” means any modification, derivative work, improvement or enhancement of the
+Licensed Materials created by or for Licensee.
+
+2.8 “Software” means the software known as Embedded MotionApps™, Embedded MotionDriver,
+MoveaTV Solution™ or AAR™ Library that is generally made available by InvenSense from its
+Developer Corner website and downloaded by Licensee as such software exists as of the date of
+download and any modifications or updates thereto that InvenSense may make generally available
+hereunder from time to time in its sole discretion.
+
+2.9 “Source Code” means those portions of the Software, if any, that are provided to Licensee in
+source code (i.e., human readable) form.
+
+2.10 “Subcontractor(s)” means Licensee’s third party contract manufacturer(s) or ODM(s) which are
+bound to written confidentiality and such other restrictions with respect to the Software and other
+InvenSense confidential information no less stringent than those contained in this Agreement.
+
+
+3. USE OF LICENSED MATERIALS.
+
+3.1 License Grants. Subject to and conditioned on Licensee’s compliance with the terms and
+conditions of this Agreement, InvenSense grants to Licensee, under InvenSense’s copyrights
+embodied in the Licensed Materials, the following non-exclusive, non-transferable, non-
+sublicensable rights to:
+
+(a) incorporate the Software into Licensee Applications solely for use with the InvenSense
+Products included in such Licensee Applications;
+
+(b) with respect only to Software provided to Licensee in Source Code, execute, reproduce
+and modify the Source Code and compile such modified or unmodified Source Code, to the
+extent needed to incorporate the Software into Licensee Applications in accordance with
+clause (a) above;
+
+(c) use the Documentation and make a reasonable number of copies of the Documentation
+as reasonably necessary to exercise Licensee’s license rights granted in clause (a) and (b)
+above;
+
+(d) demonstrate the Software solely as incorporated into Licensee Applications and used
+with the InvenSense Product to actual and prospective customers of Licensee; and
+
+(e) distribute the Software solely as incorporated in Licensee Applications solely and
+exclusively for use with InvenSense Products included therein to actual customers of
+Licensee.
+
+3.2 Subcontractors. Licensee may engage Subcontractors to exercise Licensee rights in Section
+
+3.1(a), (b) and (c) above.
+
+
+4. CONDITIONS TO LICENSE GRANTS AND OTHER TERMS
+
+4.1 Compliance with Other Terms and Conditions. The rights granted to Licensee in this Agreement
+are conditioned on Licensee’s ongoing compliance with the terms and conditions of this Agreement
+and of any terms and conditions of sale or other documents provided by or on behalf of InvenSense
+to Licensee in connection with Licensee’s purchase of InvenSense Product(s), including Licensee’s
+payment of fees required under such terms and conditions of sale or other documents.
+
+4.2 Restrictions. Licensee agrees to use the Licensed Materials only as permitted in this Agreement.
+Licensee will have no right to, and will not, (a) transfer, sublicense, distribute, modify, translate,
+create derivative works of or reproduce Software or Documentation (or any portions thereof)
+except as expressly permitted in Section 3; (b) decompile, reverse engineer or disassemble the
+Binary Code; or (c) take any actions, including combining or distributing the Software with open
+source software, that would cause the Software or any portion thereof to become subject to the
+GNU General Public License or any other open source license that imposes any limitation, restriction
+or condition requiring that the Software combined or distributed with such open source software: (i)
+be disclosed or distributed in source code form; (ii) be licensed on terms inconsistent with the terms
+of this Agreement. Licensee will not remove, obscure or alter any InvenSense trademark, copyright
+or other marking from the Licensed Materials, and Licensee will reproduce, to the extent
+commercially reasonable, all such marks and proprietary rights and ownership notices on all copies
+of the Licensed Materials made by or for Licensee. Licensee agrees not to use the Licensed Materials
+with any integrated circuit device other than the InvenSense Products (except that incidental
+interaction by the Software with other components or software included in the Licensee
+Applications is permitted).
+
+4.3 Ownership.  Licensee acknowledges and agrees that InvenSense (and/or its licensors) retains
+and will own all right, title and interest, including all intellectual property rights, in and to the
+Licensed Materials and any modifications or derivative works of the Licensed Materials that are
+developed by or for InvenSense (including any based on the Modifications or Licensee feedback).
+Licensee has, and shall acquire, no rights in the foregoing except those expressly granted in Section
+3 under this Agreement. Licensee acknowledges and agrees that InvenSense shall not be restricted
+from selling, licensing, modifying, or otherwise distributing the Licensed Materials to any third party.
+
+4.4 No Implied Rights. Other than the copyright licenses expressly granted to Licensee in Section 3
+with respect to Licensed Materials, no right, license, authority or immunity of any kind is granted (or
+deemed assigned or granted) by InvenSense to Licensee or any third party (whether by implied
+license, estoppel, exhaustion, or otherwise and whether under this Agreement, as a result of the
+activities related thereto, or otherwise) under any of InvenSense’s patents and other intellectual
+property rights even if such patent or other rights are practiced (whether necessarily or otherwise)
+by the Licensed Materials or their permitted use in connection with the exercise of the rights
+expressly granted in Section 3. Licensee acknowledges and agrees that Licensee has no such rights
+and will not assert (or assist or permit any third party to assert) any position to the contrary.
+
+4.5 Licensee Intellectual Property Rights. Licensee and its affiliates shall not assert any intellectual
+property rights in or relating to Licensed Materials or Modifications and/or parts thereof against
+InvenSense or its affiliates or its or their respective direct and indirect licensees, suppliers,
+manufacturers, distributors, contractors, customers or end users (all including their affiliates).
+Should Licensee or any of its affiliates bring a claim against InvenSense or any of the protected
+persons described above for infringement or misappropriation of any intellectual property rights in
+any Licensed Materials or Modifications and/or parts thereof, InvenSense will be entitled to
+terminate all licenses granted hereunder with immediate effect upon notice to Licensee, and all the
+licenses granted up to the date of such notice will cease to have any effect.
+
+4.6 Modifications.  Subject to InvenSense’s underlying ownership in the Software and grantback
+license below, Licensee shall retain ownership of all Modifications. While Licensee and its affiliates
+are under no obligation to disclose or deliver any Modifications to InvenSense, Licensee agrees to
+provide to InvenSense, at InvenSense’s request, information necessary for InvenSense to determine
+whether Licensee complied with its obligations herein with respect to the use of Modifications. As
+to any Modification that Licensee or its affiliates create, disclose, deliver or otherwise provide access
+or make available to InvenSense or its affiliates or other customers, Licensee (on behalf of itself and
+its affiliates) hereby grants to InvenSense and its affiliates a fully paid, royalty-free, worldwide, fully
+exhaustive, perpetual, irrevocable, sublicensable, unrestricted right and license to use, copy, modify,
+create derivative works, distribute, sell and otherwise commercialize the Modification and all
+intellectual property rights therein. InvenSense will not have any obligation to keep the
+Modifications confidential, regardless of anything to the contrary in any agreement between
+Licensee and InvenSense.
+
+4.7 Feedback. InvenSense and its affiliates will have an unlimited, perpetual, non-exclusive,
+worldwide, transferable and sublicensable right to use and employ in its development,
+commercialization and any exploitation of the Licensed Materials and any other products and
+services all comments, bug reports, suggestions, ideas and other feedback that Licensee may
+provide to InvenSense or its affiliates concerning the Licensed Materials or Modifications.
+
+4.8 Confidential Information. Licensee will not disclose any Confidential Information to any third
+party (except Subcontractors, as permitted herein) or use Confidential Information except as
+expressly permitted in this Agreement. Licensee agrees to take all reasonable measures to protect
+Confidential Information and prevent its unauthorized disclosure, including measures at least as
+stringent as those measures Licensee takes to protect Licensee’s own most sensitive confidential
+information. Licensee agrees to restrict access to Confidential Information to Licensee employees
+and Subcontractors who are under obligations to protect Confidential Information in accordance
+with this Agreement and who have a “need to know” the Confidential Information to exercise
+Licensee license rights in this Agreement. All Confidential Information, and any documents and
+other tangible objects containing or representing Confidential Information, and all copies of
+Confidential Information, are and will remain the exclusive property of InvenSense.
+
+4.9 Responsibility for Subcontractors. Licensee is responsible to ensure that Subcontractors comply
+with the terms and conditions of this Agreement. Any act or omission by a Subcontractor that would
+be a breach of this Agreement by Licensee if Licensee performed the act will be deemed a breach of
+this Agreement by Licensee.
+
+4.10 No Endorsement. Licensee may not use InvenSense’s name to endorse or promote products
+derived from the Licensed Materials without specific prior written permission.
+
+
+5. UPDATES
+
+At its discretion, InvenSense may provide Licensee with upgrades or updates to the Licensed
+Materials during the term of this Agreement (and such upgrades or updates will be included in the
+relevant category of, and become subject to the same terms and conditions as, Licensed Materials
+under this Agreement). However, InvenSense is under no obligation to provide any support or
+maintenance for the Licensed Materials and the Licensed Materials are provided to Licensee with no
+obligation whatsoever on the part of InvenSense to fix bugs, notify Licensee of known bugs now or
+in the future, update the Licensed Materials, or port the Licensed Materials to any other operating
+system, device, or hardware.
+
+
+6. DISCLAIMER OF WARRANTIES
+
+TO THE FULLEST EXTENT PERMITTED BY LAW, THE LICENSED MATERIALS ARE PROVIDED TO
+LICENSEE ON AN “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF
+TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. FOR THE
+SAKE OF CLARITY, INVENSENSE AND ITS AFFILIATES AND ITS AND THEIR SUPPLIERS DO NOT
+WARRANT, GUARANTEE OR MAKE ANY REPRESENTATIONS (A) REGARDING THE USE, OR THE
+RESULTS OF THE USE, OF ANY OF THE LICENSED MATERIALS IN TERMS OF CORRECTNESS,
+COMPLETENESS, ACCURACY, RELIABILITY, OR OTHERWISE, AND (B) THAT THE LICENSED MATERIALS
+HAVE BEEN TESTED FOR COMPLIANCE WITH ANY REGULATORY OR INDUSTRY STANDARD,
+INCLUDING WITHOUT LIMITATION ANY SUCH STANDARDS PROMULGATED BY THE FCC OR OTHER
+LIKE AGENCIES. THE SOFTWARE IS NOT DESIGNED, INTENDED, OR AUTHORIZED FOR USE IN ANY
+TYPE OF SYSTEM OR APPLICATION IN WHICH THE FAILURE OF THE SOFTWARE COULD CREATE A
+SITUATION WHERE PERSONAL INJURY OR DEATH MAY OCCUR (E.G. MEDICAL SYSTEMS, LIFE
+SUSTAINING OR LIFE SAVING SYSTEMS).
+
+
+7. LIMITATION OF LIABILITY
+
+TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT WILL INVENSENSE OR ANY OF ITS
+AFFILIATES OR ITS OR THEIR SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION BASED ON CONTRACT, TORT OR OTHERWISE, ARISING FROM OR RELATING
+TO THIS AGREEMENT OR THE LICENSED MATERIALS (INCLUDING, WITHOUT LIMITATION, FOR LOSS
+OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER
+LOSS) IN EXCESS OF ONE HUNDRED UNITED STATES DOLLARS (US$100) IN THE AGGREGATE, EVEN IF
+INVENSENSE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH CLAIM, DAMAGES, OR LIABILITY.
+NOTWITHSTANDING ANYTHING TO THE CONTRARY AND REGARDLESS OF THE CAUSE IN LAW,
+INVENSENSE WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES,
+INCLUDING WITHOUT LIMITATION ANY DAMAGES ARISING FROM INTERRUPTED OPERATION, LOSS
+OF PROFITS, LOSS OF REVENUE, LOSS OF GOODWILL, LOSS OF CAPITAL AND/OR LOSS OF
+INFORMATION AND DATA INCURRED BY LICENSEE OR ANY THIRD PARTY, WHETHER IN AN ACTION
+IN CONTRACT OR TORT OR OTHER THEORY OF LIABILITY, EVEN IF THE OTHER PARTY HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+
+8. TERM AND TERMINATION
+
+8.1 Term. This Agreement will continue in effect until terminated as described below in this Section
+8.
+
+8.2 Termination by Licensee. Licensee may terminate this Agreement with immediate effect upon
+written notice of termination to InvenSense.
+
+8.3 Termination by InvenSense. InvenSense may terminate this Agreement with immediate effect
+upon written notice to Licensee with no liability to Licensee if (a) Licensee breaches any term of this
+Agreement or (b) Licensee is acquired, merged, or undergoes a change of control (and Licensee
+agrees to notify InvenSense of any such transaction).
+
+8.4 Surviving Terms. The following provisions will survive termination or expiration of this
+Agreement: Section 4, Section 6, Section 7, Section 8, Section 9 and Section 10.
+
+8.5 Return of Materials. Immediately upon termination or expiration of this Agreement, Licensee
+agrees to return to InvenSense all copies of the Licensed Materials, or at InvenSense’s request,
+destroy all Licensed Materials. If InvenSense so requests, Licensee agrees to have an executive of
+Licensee provide InvenSense with a letter stating that all copies of the Licensed Materials have been
+returned or destroyed.
+
+
+9. INDEMNITY.
+
+Licensee agrees to indemnify and hold harmless InvenSense and its affiliates and its and their
+officers, directors, customers, employees and successors and assigns (each an “Indemnified Party”)
+against any and all claims, demands, causes of action, losses, liabilities, damages, costs and
+expenses, incurred by the Indemnified Party (including but not limited to costs of defense,
+investigation and reasonable attorney’s fees) arising out of, resulting from or related to (i) the
+download, distribution, installation, storage, execution, use or transfer of the Licensed Materials,
+and all related products, documentation, content, materials or derivative works by any person or
+entity, and/or (ii) any breach of this Agreement by Licensee. If requested by an Indemnified Party,
+Licensee agrees to defend such Indemnified Party in connection with any third party claims,
+demands, or causes of action resulting from, arising out of or in connection with any of the
+foregoing.
+
+
+10. MISCELLANEOUS PROVISIONS.
+
+10.1 Notices. All notices required hereunder will be in writing and, if to InvenSense, will be sent by
+(a) U.S. mail (first class), (b) nationally recognized courier service (e.g., DHL, Federal Express), with all
+postage or delivery charges prepaid, subject to confirmation via U.S. mail or nationally recognized
+courier service, or if to Licensee, by (a) electronic mail, (b) U.S. mail (first class), (c) nationally
+recognized courier service (e.g., DHL, Federal Express), or (d) by notice posted on the InvenSense
+“Developer’s Corner” website (www.invensense.com/developers) (such notice shall be deemed to
+have been received by Licensee five (5) business days after it has been posted). Notices to
+InvenSense will be addressed to Attn: InvenSense Legal Department, 1745 Technology Drive, San
+Jose, CA 95110, USA or to such other address(es) as may be furnished by written notice in the
+manner set forth her; and notices to Licensee, if mailed, will be sent to the physical or email address
+supplied by Licensee as part of Licensee’s registration to InvenSense’s “Developers Corner,” or to
+such other address(es) as may be furnished by written notice in the manner set forth herein. Notices
+will be deemed to have been served when delivered or, if delivery is not performed as a result of the
+addressee’s fault, when tendered.
+
+10.2 United States Government End Users. The Licensed Materials are “Commercial Items(s)” as
+defined in 48 C.F.R. § 2.101, consisting of “Commercial Computer Software” and “Commercial
+Computer Software Documentation,” as such terms are used in 48 C.F.R. § 12.212 or 48 C.F.R. §
+227.7202, as applicable. Consistent with 48 C.F.R. § 12.212 or 48 C.F.R. § 227.7202 1 through
+227.7202 4, as applicable, the Commercial Computer Software and Commercial Computer Software
+Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and
+(b) with only those rights as are granted to all other end users pursuant to the terms and conditions
+herein. If Licensee is licensing the Licensed Materials for acquisition by the U.S. Government or any
+contractor therefor, Licensee must license consistent with the policies set forth in 48 C.F.R. § 12.212
+(for civilian agencies), and 48 C.F.R. § 227.7202 1 and 227.7202 4 (for the Department of Defense),
+and their successors.
+
+10.3 Representations and Warranties. Licensee represents and warrants that Licensee has the right
+to enter into this Agreement and to meet Licensee obligations under this Agreement.
+
+10.4 Governing Law; Venue. Any and all disputes arising out of or related to this Agreement,
+including but not limited to the interpretation, validity, enforceability and performance of this
+Agreement, will be governed by and construed in accordance with the law of the State of California,
+without regard to or application of any of California’s conflict of law rules. Any legal suit, action or
+proceeding arising out of or relating to this Agreement will be commenced in the federal courts in
+the Northern District of California or in the state courts in Santa Clara County, California, and each
+party hereto irrevocably submits to the jurisdiction and venue of any such court in any such suit,
+action or proceeding. Notwithstanding the foregoing, InvenSense may seek interim or injunctive
+relief in any court of competent jurisdiction to protect its intellectual property rights.
+
+10.5 Severability; Waiver. If any provision of this Agreement is determined to be invalid,
+unenforceable, overbroad, or illegal, the validity or enforceability of the other provisions will not be
+affected and any the affected provision will be construed by limiting or reducing it, so as to be
+enforceable with applicable law. No waiver by InvenSense of any right under this Agreement will be
+construed as a waiver of any other right or breach. Licensee must comply with all applicable laws
+regarding use of the Licensed Materials (including without limitation all US and international export
+laws). All of InvenSense’s rights, disclaimers, and limitations of liability under this Agreement and
+with respect to the Licensed Materials will also apply to any component or portion of the Licensed
+Materials.
+
+10.6 Assignment. InvenSense may assign to another person or entity this Agreement or any of its
+rights under this Agreement in whole or in part. Licensee may not assign, sublicense, or transfer this
+Agreement or any of Licensee’s rights hereunder to any third party, without InvenSense’s express
+prior written consent, which may be withheld in InvenSense’s sole discretion. This Agreement will
+be binding upon Licensee and Licensee heirs, executors, administrators, and successors, and will
+inure to the benefit of all successors and assigns of InvenSense.
+
+10.7 Entire Agreement; Amendment. This Agreement, including all Exhibits hereto, constitutes the
+entire agreement and understanding of the Licensee and InvenSense with respect to the subject
+matter hereof, and supersedes all prior and contemporaneous correspondence, negotiations,
+agreements and understandings between Licensee and InvenSense, and any representations and
+warranties, both oral and written.    Notwithstanding the foregoing, if Licensee has entered into a
+separate confidentiality agreement or non‐disclosure agreement with InvenSense with respect to
+the confidentiality of the Licensed Materials, then that agreement will continue to apply with
+respect to that subject matter to the extent that it is more protective of the confidentiality of the
+Licensed Materials than this Agreement. No modification, cancellation, or amendment of this
+Agreement will be binding unless executed in writing (referencing this Agreement) by Licensee and a
+duly authorized officer of InvenSense.
+
+Exhibit A
+
+Licensed Material is permitted to be used solely and exclusively with the following InvenSense
+Products:
+
+IMU-3000, ICM-20655, MPU-3050, MPU-6050, MPU-9150, MPU-6500, MPU-9250, MPU-6555, MPU-9255
+
+*Notes: Additional devices may be added in Exhibit A at the sole discretion of InvenSense as long as
+written notice is given by InvenSense in accordance to Section 10.1.
