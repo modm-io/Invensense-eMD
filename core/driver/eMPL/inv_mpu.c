@@ -116,7 +116,26 @@ static inline int reg_int_cb(struct int_param_s *int_param)
 #define labs        abs
 #define fabs(x)     (((x)>0)?(x):-(x))
 #else
-#error  Gyro driver is missing the system layer implementations.
+
+extern int inv_i2c_write(uint8_t slave_addr, uint8_t reg_addr,
+                         uint8_t length, uint8_t const *data);
+extern int inv_i2c_read(uint8_t slave_addr, uint8_t reg_addr,
+                        uint8_t length, uint8_t *data);
+
+extern void inv_delay_ms(uint32_t num_ms);
+extern void inv_get_ms(uint32_t *count);
+
+#define i2c_write   inv_i2c_write
+#define i2c_read    inv_i2c_read
+#define delay_ms    inv_delay_ms
+#define get_ms      inv_get_ms
+
+#include "log.h"
+#define log_i       MPL_LOGI
+#define log_e       MPL_LOGE
+#define min(a,b) ((a<b)?a:b)
+#define reg_int_cb(...) do {} while (0)
+
 #endif
 
 #if !defined MPU6050 && !defined MPU9150 && !defined MPU6500 && !defined MPU9250

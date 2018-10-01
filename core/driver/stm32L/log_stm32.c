@@ -26,8 +26,6 @@
 
 #include "packet.h"
 #include "log.h"
-#include "stm32f4xx.h"
-#include "uart.h"
 
 #define BUF_SIZE        (256)
 #define PACKET_LENGTH   (23)
@@ -35,6 +33,20 @@
 #define PACKET_DEBUG    (1)
 #define PACKET_QUAT     (2)
 #define PACKET_DATA     (3)
+
+#if defined EMPL_TARGET_STM32F4
+#include "stm32f4xx.h"
+#include "uart.h"
+#else
+
+extern int inv_vsnprintf(char *s, size_t n, const char *fmt, va_list args);
+extern int inv_fputc(int s);
+
+#define vsprintf(a, b, c) inv_vsnprintf(a, BUF_SIZE, b, c)
+#define fputc inv_fputc
+
+#endif
+
 
 /**
  *  @brief      Prints a variable argument log message.

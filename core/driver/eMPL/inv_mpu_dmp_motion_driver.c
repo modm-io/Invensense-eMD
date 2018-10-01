@@ -72,7 +72,11 @@
 #define log_e       MPL_LOGE
 
 #else
-#error  Gyro driver is missing the system layer implementations.
+
+extern void inv_get_ms(unsigned long *count);
+#define get_ms      inv_get_ms
+#define __no_operation()
+
 #endif
 
 /* These defines are copied from dmpDefaultMPU6050.c in the general MPL

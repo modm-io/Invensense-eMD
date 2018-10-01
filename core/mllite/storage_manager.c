@@ -127,7 +127,7 @@ inv_error_t inv_load_mpl_states(const unsigned char *data, size_t length)
     long len;
 
     len = length; // Important so we get negative numbers
-    if (len < sizeof(struct data_header_t))
+    if (len < (signed) sizeof(struct data_header_t))
         return INV_ERROR_CALIBRATION_LOAD;	// No data
     hd = (struct data_header_t *)data;
     if (hd->key != DEFAULT_KEY)
