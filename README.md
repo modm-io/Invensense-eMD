@@ -1,19 +1,21 @@
 # Invensense Embedded Motion Driver 6.12 for Cortex-M
 
-This is an minimal copy of the core code of the motion driver download
+This is a minimal copy of the core code of the motion driver download
 for the sole purpose of integrating with the modm embedded library.
 
-The specific folders copied here are:
+The specific files copied here are:
 
-- `arm/STM32F4_MD6/Projects/eMD6/core/` to `core/`.
-- `mpl libraries/arm/gcc4.9.3` to `lib/arm/`
+- `arm/STM32F4_MD6/Projects/eMD6/core/*` to `eMD/*`.
+- `mpl libraries/arm/gcc4.9.3/*` to `eMD/mpl/lib/*`.
 
-Minimal modifications were made to these files:
+### Porting
 
-- `core/driver/eMPL/inv_mpu.c` for porting.
-- `core/driver/eMPL/inv_mpu_dmp_motion_driver.c` for porting.
-- `core/driver/stm32L/log_stm32.c` for porting.
-- `core/mllite/storage_manager.c` for unsigned/signed comparison.
+Modifications were made to these files:
+
+- `eMD/driver/eMPL/inv_mpu.c` for porting.
+- `eMD/driver/eMPL/inv_mpu_dmp_motion_driver.c` for porting.
+- `eMD/driver/stm32L/log_stm32.c` for porting.
+- `eMD/mllite/storage_manager.c` for unsigned/signed comparison.
 
 The changes for porting only consist out of extern declaring the following
 functions, which must be ported for the specific platform.
@@ -36,6 +38,10 @@ extern int inv_vsnprintf(char *s, size_t n, const char *fmt, va_list args);
 // fputc replacement: for logging output
 extern int inv_fputc(int s);
 ```
+
+A modm port of these functions is provided in `modm/port/`.
+
+### License
 
 Please note that the license from Invensense is non-standard, proprietary license,
 which, however, permits distribution for the purpose of integration into non-GPL
