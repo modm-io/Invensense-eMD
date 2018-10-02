@@ -6,6 +6,7 @@ for the sole purpose of integrating with the modm embedded library.
 The specific files copied here are:
 
 - `arm/STM32F4_MD6/Projects/eMD6/core/*` to `eMD/*`.
+- `arm/STM32F4_MD6/Projects/eMD6/User/src/main.c` to `example/vendor/main.cpp`.
 - `mpl libraries/arm/gcc4.9.3/*` to `eMD/mpl/lib/*`.
 - `eMPL-pythonclient/*` to `eMD/pythonclient/*`.
 
@@ -18,6 +19,7 @@ Modifications were made to these files:
 - `eMD/driver/stm32L/log_stm32.c` for porting.
 - `eMD/mllite/storage_manager.c` for unsigned/signed comparison.
 - `eMD/pythonclient/*` for porting to Python 3.6.
+- `example/vendor/main.cpp` for porting to modm and C++.
 
 The changes for porting only consist out of extern declaring the following
 functions, which must be ported for the specific platform.

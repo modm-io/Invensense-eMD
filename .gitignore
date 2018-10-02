@@ -1,0 +1,7 @@
+*.pyc
+build
+example/**/SConstruct
+example/**/invensense
+example/**/modm
+example/**/.lbuild_cache
+.sconsign.dblite
