@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2018 Niklas Hauser
+ *
+ * This file is part of the modm project.
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+// ----------------------------------------------------------------------------
+
+
+#ifndef INVENSENSE_MODM_HPP
+#define INVENSENSE_MODM_HPP
+
+#include <invensense/eMD.hpp>
+#include <modm/architecture/interface/i2c_transaction.hpp>
+
+namespace invensense::emd
+{
+
+using i2c_handler_t = bool(*)(modm::I2cTransaction*);
+bool set_i2c_handler(i2c_handler_t handler);
+
+%% if env.get(":emd:driver:log", False)
+using uart_handler_t = bool(*)(uint8_t);
+bool set_uart_handler(uart_handler_t handler);
+%% endif
+
+}
+
+#endif // INVENSENSE_MODM_HPP
