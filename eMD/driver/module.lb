@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# Copyright (c) 2018, Niklas Hauser
+#
+# This file is part of the modm project.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# -----------------------------------------------------------------------------
+
+def init(module):
+    module.parent = ":emd"
+    module.name = "driver"
+
+def prepare(module, options):
+    module.add_option(EnumerationOption(name="device",
+                                        description="Choose the device you're using.",
+                                        enumeration=["MPU6050", "MPU6500", "MPU9150", "MPU9250"],
+                                        default="MPU9250"))
+    module.add_option(BooleanOption(name="log",
+                                    description="Use the Invensense log format.",
+                                    default=False))
+    return True
+
+def build(env):
+    env.outbasepath = "invensense/src/invensense/eMD/driver"
+    env.copy("eMPL")
+    env.copy("include")
+    if env[":emd:driver:log"]:
+        env.copy("stm32L", "log")
+        env.add_metadata("include_path", "invensense/src/invensense/eMD/driver/log")
+    else:
+        env.add_metadata("cpp.define", "REMOVE_LOGGING")
+
+    env.add_metadata("include_path", "invensense/src/invensense/eMD/driver/eMPL",
+                                     "invensense/src/invensense/eMD/driver/include")
+
+    env.add_metadata("cpp.define", env["device"])
+

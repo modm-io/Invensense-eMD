@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2018 Niklas Hauser
+ *
+ * This file is part of the modm project.
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+// ----------------------------------------------------------------------------
+
+
+#ifndef INVENSENSE_EMD_HPP
+#define INVENSENSE_EMD_HPP
+
+%% if env.has_module(":emd:mllite")
+#include "eMD/mllite/invensense.h"
+%% endif
+%% if env.has_module(":emd:mpl")
+#include "eMD/mpl/invensense_adv.h"
+%% endif
+%% if env.has_module(":emd:hal")
+#include "eMD/hal/eMPL_outputs.h"
+%% endif
+
+%% if env.has_module(":emd:driver")
+extern "C" {
+#include "eMD/driver/eMPL/inv_mpu.h"
+#include "eMD/driver/eMPL/inv_mpu_dmp_motion_driver.h"
+%% if env.get(":emd:driver:log", False)
+#include "eMD/driver/log/packet.h"
+%% endif
+}
+%% endif
+
+#endif // INVENSENSE_EMD_HPP
