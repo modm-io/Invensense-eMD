@@ -1,0 +1,29 @@
+<library>
+  <repositories>
+    <repository>
+      <vcs>
+        <git>
+          <name>modm</name>
+          <url>https://github.com/modm-io/modm.git</url>
+          <branch>develop</branch>
+        </git>
+      </vcs>
+      <path>{cache}/modm/repo.lb</path>
+    </repository>
+    <repository>
+      <path>../../repo.lb</path>
+    </repository>
+    <cache>../.lbuild_cache</cache>
+  </repositories>
+  <extends>modm:board:nucleo-f411re</extends>
+  <options>
+    <option name=":build:build.path">../../build/example/class/nucleo_f411</option>
+    <option name=":emd:driver:device">MPU9250</option>
+    <option name=":emd:driver:log">True</option>
+  </options>
+  <modules>
+    <module>:modm:driver</module>
+    <module>:build:scons</module>
+    <module>:platform:i2c:1</module>
+  </modules>
+</library>
