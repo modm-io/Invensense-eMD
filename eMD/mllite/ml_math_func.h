@@ -43,16 +43,13 @@ extern "C" {
 
     static inline float inv_q16_to_float(long q16)
     {
-        return (float) q16 / (1L << 16);
+        return (float) q16 / ((float)(1L << 16));
     }
 
     static inline double inv_q16_to_double(long q16)
     {
-        return (double) q16 / (1L << 16);
+        return (double) q16 / ((double)(1L << 16));
     }
-
-
-
 
     long inv_q29_mult(long a, long b);
     long inv_q30_mult(long a, long b);
