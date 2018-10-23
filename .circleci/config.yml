@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  examples:
+    docker:
+      - image: modm/modm-build:latest
+    environment:
+      - LANG: "en_US.UTF-8"
+      - SCONS_LIB_DIR: "/usr/local/lib/python3.6/dist-packages/scons-3.0.1"
+      - SCONSFLAGS: "-j4"
+    steps:
+      - checkout
+      - run: pip3 install -U lbuild
+      - run: (cd example && lbuild init)
+      - run:
+          name: Vendor Example
+          command: |
+            (cd example/vendor && lbuild build && scons)
+      - run:
+          name: MPU Class Example
+          command: |
+            (cd example/mpu_class && lbuild build && scons)
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - examples
