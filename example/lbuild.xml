@@ -1,0 +1,24 @@
+<library>
+  <repositories>
+    <repository>
+      <vcs>
+        <git>
+          <name>modm</name>
+          <url>https://github.com/modm-io/modm.git</url>
+          <branch>develop</branch>
+        </git>
+      </vcs>
+      <path>{cache}/modm/repo.lb</path>
+    </repository>
+    <repository>
+      <path>../repo.lb</path>
+    </repository>
+    <cache>.lbuild_cache</cache>
+  </repositories>
+  <options>
+    <option name="invensense:emd:driver:device">MPU9250</option>
+  </options>
+  <modules>
+    <module>modm:build:scons</module>
+  </modules>
+</library>
