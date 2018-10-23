@@ -31,6 +31,6 @@ def build(env):
     env.outbasepath = "invensense/src/invensense/"
     env.template("eMD.hpp.in", substitutions={"env": env})
 
-    env.add_metadata("cpp.define", "EMPL")
-    env.add_metadata("cpp.define.release", "MPL_LOG_NDEBUG=1")
-    env.add_metadata("cpp.define.debug", "MPL_LOG_NDEBUG=0")
+    env.add_metadata("flags.cppdefines", "EMPL")
+    env.add_metadata("flags.cppdefines.release", "MPL_LOG_NDEBUG=1")
+    env.add_metadata("flags.cppdefines.debug", "MPL_LOG_NDEBUG=0")
