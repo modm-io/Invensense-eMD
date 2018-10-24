@@ -10,7 +10,8 @@ The specific files copied here are:
 - `mpl libraries/arm/gcc4.9.3/*` to `eMD/mpl/lib/*`.
 - `eMPL-pythonclient/*` to `eMD/pythonclient/*`.
 
-### Porting
+
+## Porting
 
 Modifications were made to these files:
 
@@ -45,7 +46,15 @@ extern int inv_fputc(int s);
 
 A modm port of these functions is provided in `modm/port/`.
 
-### License
+
+## Examples
+
+A number of examples are provided in the `example` folder.
+These examples are compiled against modm in CI for every pull request.
+[![CircleCI](https://circleci.com/gh/modm-io/Invensense-eMD.svg?style=svg)](https://circleci.com/gh/modm-io/Invensense-eMD)
+
+
+## License
 
 Please note that the license from Invensense is non-standard, proprietary license,
 which, however, permits distribution for the purpose of integration into non-GPL
