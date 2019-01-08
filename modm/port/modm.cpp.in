@@ -170,6 +170,6 @@ int inv_vsnprintf(char *s, size_t n, const char *fmt, va_list args)
 	stream.vprintf(fmt, args);
 	return buffer.size();
 }
-%% endif
 
 }
+%% endif
