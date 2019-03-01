@@ -39,5 +39,6 @@ def build(env):
     core_lib = core[8].replace("7", "4").replace("4", "4_{}".format(env.get("abi", "nofp")))
 
     env.extract("lib/liblibmplmpu_m{}.zip".format(core_lib), "liblibmplmpu.a", "lib/libmpl.a")
-    env.add_metadata("required_library_path", "invensense/src/invensense/eMD/mpl/lib/")
-    env.add_metadata("required_library", "mpl.a")
+
+    env.collect("modm:build:path.library", "invensense/src/invensense/eMD/mpl/lib/")
+    env.collect("modm:build:library", "mpl.a")

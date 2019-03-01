@@ -21,4 +21,4 @@ def prepare(module, options):
 def build(env):
     env.outbasepath = "invensense/src/invensense/eMD/mllite"
     env.copy(".")
-    env.add_metadata("include_path", "invensense/src/invensense/eMD/mllite")
+    env.collect("modm:build:path.include", "invensense/src/invensense/eMD/mllite")

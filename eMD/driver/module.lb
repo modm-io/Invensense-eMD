@@ -30,12 +30,12 @@ def build(env):
     env.copy("include")
     if env[":emd:driver:log"]:
         env.copy("stm32L", "log")
-        env.add_metadata("include_path", "invensense/src/invensense/eMD/driver/log")
+        env.collect("modm:build:path.include", "invensense/src/invensense/eMD/driver/log")
     else:
-        env.add_metadata("flags.cppdefines", "REMOVE_LOGGING")
+        env.collect("modm:build:cppdefines", "REMOVE_LOGGING")
 
-    env.add_metadata("include_path", "invensense/src/invensense/eMD/driver/eMPL",
-                                     "invensense/src/invensense/eMD/driver/include")
+    env.collect("modm:build:path.include", "invensense/src/invensense/eMD/driver/eMPL",
+                                           "invensense/src/invensense/eMD/driver/include")
 
-    env.add_metadata("flags.cppdefines", env["device"])
+    env.collect("modm:build:cppdefines", env["device"])
 
