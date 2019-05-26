@@ -33,7 +33,7 @@ void board_init()
 	imu::Int::enableExternalInterruptVector(12);
 
 	imu::Master::connect<imu::Sda::Sda, imu::Scl::Scl>();
-	imu::Master::initialize<Board::systemClock, imu::Master::Baudrate::Fast>();
+	imu::Master::initialize<Board::SystemClock, 400_kHz>();
 	invensense::emd::set_i2c_handler([](modm::I2cTransaction *t)
 	{
 		return imu::Master::start(t);

@@ -31,7 +31,7 @@ void board_init()
 	LedD13::setOutput();
 
 	imu::Master::connect<imu::Sda::Sda, imu::Scl::Scl>();
-	imu::Master::initialize<Board::systemClock, imu::Master::Baudrate::Fast>();
+	imu::Master::initialize<Board::SystemClock, 400_kHz>();
 
 	invensense::emd::set_uart_handler([](uint8_t c)
 	{

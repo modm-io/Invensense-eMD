@@ -13,7 +13,7 @@
 license_warning = """\
 The Invensense Embedded Motion Drivers (eMD) are licensed under a \
 PROPRIETARY license, which you should definitely verify yourself:
-    invensense/eMD/License.txt
+    invensense/src/invensense/eMD/License.txt
 """
 
 def init(module):

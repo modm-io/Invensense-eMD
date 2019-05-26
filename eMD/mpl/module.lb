@@ -33,7 +33,7 @@ def prepare(module, options):
 def build(env):
     env.outbasepath = "invensense/src/invensense/eMD/mpl"
     env.copy(".", ignore=env.ignore_paths("*/lib/*"))
-    env.add_metadata("include_path", "invensense/src/invensense/eMD/mpl")
+    env.collect("modm:build:path.include", "invensense/src/invensense/eMD/mpl")
 
     global core # Use the M4 library for a M7 core and use the chosen FP ABI
     core_lib = core[8].replace("7", "4").replace("4", "4_{}".format(env.get("abi", "nofp")))
