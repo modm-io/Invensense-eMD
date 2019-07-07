@@ -11,8 +11,7 @@
 # -----------------------------------------------------------------------------
 
 def init(module):
-    module.parent = ":emd"
-    module.name = "hal"
+    module.name = ":emd:hal"
 
 def prepare(module, options):
     module.depends(":emd:driver")

@@ -5,7 +5,6 @@
         <git>
           <name>modm</name>
           <url>https://github.com/modm-io/modm.git</url>
-          <branch>develop</branch>
         </git>
       </vcs>
       <path>{cache}/modm/repo.lb</path>

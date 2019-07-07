@@ -11,8 +11,7 @@
 # -----------------------------------------------------------------------------
 
 def init(module):
-    module.parent = ":emd"
-    module.name = "mllite"
+    module.name = ":emd:mllite"
 
 def prepare(module, options):
     module.depends(":emd:driver")

@@ -17,7 +17,7 @@ PROPRIETARY license, which you should definitely verify yourself:
 """
 
 def init(module):
-    module.name = "emd"
+    module.name = ":emd"
 
 def prepare(module, options):
     return True

@@ -13,10 +13,10 @@
 from distutils.version import StrictVersion
 
 import lbuild
-min_lbuild_version = "1.8.0"
+min_lbuild_version = "1.11.8"
 if StrictVersion(getattr(lbuild, "__version__", "0.1.0")) < StrictVersion(min_lbuild_version):
     print("The Invensense repository requires at least lbuild v{}, please upgrade!\n"
-          "    pip install -U lbuild".format(min_lbuild_version))
+          "    pip3 install -U lbuild".format(min_lbuild_version))
     exit(1)
 
 # =============================================================================

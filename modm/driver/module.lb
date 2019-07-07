@@ -11,8 +11,7 @@
 # -----------------------------------------------------------------------------
 
 def init(module):
-    module.parent = ":modm"
-    module.name = "driver"
+    module.name = ":modm:driver"
 
 def prepare(module, options):
     module.depends("modm:architecture:assert",

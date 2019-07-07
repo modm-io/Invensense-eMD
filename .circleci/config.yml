@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: pip3 install -U lbuild
-      - run: (cd example && lbuild init)
+      - run: (cd example/vendor && lbuild init)
       - run:
           name: Vendor Example
           command: |
