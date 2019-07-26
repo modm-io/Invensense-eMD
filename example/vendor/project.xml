@@ -1,12 +1,9 @@
 <library>
-  <extends>modm:nucleo-f411re</extends>
   <options>
     <option name="modm:build:build.path">../../build/example/nucleo_f411</option>
-    <option name="invensense:emd:driver:log">True</option>
   </options>
   <modules>
     <module>invensense:emd:**</module>
     <module>invensense:modm</module>
-    <module>modm:platform:i2c:1</module>
   </modules>
 </library>

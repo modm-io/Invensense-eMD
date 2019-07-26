@@ -14,10 +14,14 @@
     </repository>
     <cache>.lbuild_cache</cache>
   </repositories>
+  <extends>modm:nucleo-f411re</extends>
   <options>
     <option name="invensense:emd:driver:device">MPU9250</option>
+    <option name="invensense:emd:driver:log">True</option>
   </options>
   <modules>
+    <module>modm:platform:i2c:1</module>
     <module>modm:build:scons</module>
+    <module>modm:build:cmake</module>
   </modules>
 </library>

@@ -4,4 +4,6 @@ example/**/SConstruct
 example/**/invensense
 example/**/modm
 example/**/.lbuild_cache
+example/**/Makefile
+example/**/CMakelists.txt
 .sconsign.dblite

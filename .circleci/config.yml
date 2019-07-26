@@ -10,11 +10,11 @@ jobs:
       - run:
           name: Vendor Example
           command: |
-            (cd example/vendor && lbuild build && scons)
+            (cd example/vendor && lbuild build && scons; make)
       - run:
           name: MPU Class Example
           command: |
-            (cd example/mpu_class && lbuild build && scons)
+            (cd example/mpu_class && lbuild build && scons; make)
 
 workflows:
   version: 2
