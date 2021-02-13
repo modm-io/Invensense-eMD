@@ -2,7 +2,7 @@ version: 2
 jobs:
   examples:
     docker:
-      - image: modm/modm-build:latest
+      - image: ghcr.io/modm-ext/modm-build-cortex-m:latest
     steps:
       - checkout
       - run: pip3 install -U lbuild
