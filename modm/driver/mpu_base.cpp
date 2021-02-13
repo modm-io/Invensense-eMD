@@ -140,7 +140,7 @@ modm::MpuBase::getQuaternion()
 	auto quad = Quaternion(inv_q30_to_float(data[0]), inv_q30_to_float(data[1]),
 						   inv_q30_to_float(data[2]), inv_q30_to_float(data[3]));
 	quad.new_accuracy = accuracy;
-	quad.timestamp = modm::Timestamp(timestamp);
+	quad.timestamp = modm::Timestamp(modm::Duration(timestamp));
 	if (is_new) quad.new_accuracy |= 0x80;
 	return quad;
 }
@@ -156,7 +156,7 @@ modm::MpuBase::getHeading()
 	auto head = Heading();
 	head.heading = data / 65536.f;
 	head.new_accuracy = accuracy;
-	head.timestamp = modm::Timestamp(timestamp);
+	head.timestamp = modm::Timestamp(modm::Duration(timestamp));
 	if (is_new) head.new_accuracy |= 0x80;
 	return head;
 }
@@ -279,14 +279,14 @@ modm::MpuBase::configure()
 #endif
 
 	result = mpu_init(&int_param);
-	modm_assert(result == 0, "mpu", "init", "gyro", result);
+	modm_assert(result == 0, "mpu.gyro", "Gyro initialization", result);
 
 	/* If you're not using an MPU9150 AND you're not using DMP features, this
 	 * function will place all slaves on the primary bus.
 	 * mpu_set_bypass(1);
 	 */
 	result = inv_init_mpl();
-	modm_assert(result == 0, "mpu", "init", "mpl", result);
+	modm_assert(result == 0, "mpu.mpl", "MPL initialization", result);
 
 	/* Compute 6-axis and 9-axis quaternions. */
 	inv_enable_quaternion();
@@ -335,8 +335,8 @@ modm::MpuBase::configure()
 	inv_enable_eMPL_outputs();
 
 	result = inv_start_mpl();
-	modm_assert(result != INV_ERROR_NOT_AUTHORIZED, "mpu", "init", "mpl-authorized", result);
-	modm_assert(result == 0, "mpu", "init", "mpl-start", result);
+	modm_assert(result != INV_ERROR_NOT_AUTHORIZED, "mpu.unauthorized", "Wrong MPL key", result);
+	modm_assert(result == 0, "mpu.start", "MPL failed to start", result);
 
 	/* Get/set hardware configuration. Start gyro. */
 	/* Wake up all sensors. */

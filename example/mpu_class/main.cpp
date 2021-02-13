@@ -120,7 +120,7 @@ static void read_from_mpl(void)
 	//          quad.w, quad.x, quad.y, quad.z);
 	imu::Device::Heading head = imu::Device::getHeading();
 	MPL_LOGI("%lu ms, %u, %u: %7.3f\n",
-	         head.time().getTime(), head.accuracy(), head.is_new(),
+	         head.time().time_since_epoch().count(), head.accuracy(), head.is_new(),
 	         head.heading);
 
 	if (inv_get_sensor_type_quat(data, &accuracy, (inv_time_t*)&timestamp)) {

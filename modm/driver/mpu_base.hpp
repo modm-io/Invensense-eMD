@@ -50,7 +50,7 @@ public:
 	{
 		friend class MpuBase;
 		uint8_t new_accuracy{0};
-		modm::Timestamp timestamp{0};
+		modm::Timestamp timestamp;
 	public:
 		using modm::Quaternion<float>::Quaternion;
 		bool is_new() const { return this->new_accuracy & 0x80; }
@@ -62,7 +62,7 @@ public:
 	{
 		friend class MpuBase;
 		uint8_t new_accuracy{0};
-		modm::Timestamp timestamp{0};
+		modm::Timestamp timestamp;
 	public:
 		float heading;
 		bool is_new() const { return this->new_accuracy & 0x80; }

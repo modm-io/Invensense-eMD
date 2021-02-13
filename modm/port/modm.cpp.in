@@ -18,13 +18,13 @@ extern "C"
 
 void inv_delay_ms(uint32_t num_ms)
 {
-	modm::Timeout t(num_ms);
+	modm::Timeout t{std::chrono::milliseconds(num_ms)};
 	while(not t.isExpired()) ;
 }
 
 void inv_get_ms(uint32_t *count)
 {
-	*count = modm::Clock::now().getTime();
+	*count = modm::Clock::now().time_since_epoch().count();
 }
 
 }
@@ -158,7 +158,7 @@ public:
 		buffer(buffer), max_length(length) {}
 	virtual void write(char c) override
 	{ if (count < max_length) buffer[count++] = c; }
-	virtual bool read(char &c) override { return false; }
+	virtual bool read(char&) override { return false; }
 	virtual void flush() override {}
 	size_t size() const { return count; }
 };
