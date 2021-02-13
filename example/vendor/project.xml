@@ -1,9 +1,10 @@
 <library>
   <options>
-    <option name="modm:build:build.path">../../build/example/nucleo_f411</option>
+    <option name="modm:build:build.path">../../build/example/vendor</option>
   </options>
   <modules>
     <module>invensense:emd:**</module>
     <module>invensense:modm</module>
+    <module>modm:build:make</module>
   </modules>
 </library>

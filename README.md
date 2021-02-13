@@ -49,7 +49,27 @@ A modm port of these functions is provided in `modm/port/`.
 
 ## Examples
 
-A number of examples are provided in the `example` folder.
+A few examples are provided in the `example` folder:
+
+```
+# Clone the modm repository into examples/.lbuild_cache
+cd examples
+lbuild init
+
+# Compile with SCons or CMake
+cd mpu_class
+lbuild build
+scons
+make
+
+# Compile with SCons or Makefile
+cd ../vendor
+lbuild build
+scons
+make
+```
+
+
 These examples are compiled against modm in CI for every pull request.
 [![CircleCI](https://circleci.com/gh/modm-io/Invensense-eMD.svg?style=svg)](https://circleci.com/gh/modm-io/Invensense-eMD)
 

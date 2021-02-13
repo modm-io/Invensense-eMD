@@ -1,8 +1,9 @@
 <library>
   <options>
-    <option name="modm:build:build.path">../../build/example/class/nucleo_f411</option>
+    <option name="modm:build:build.path">../../build/example/mpu_class</option>
   </options>
   <modules>
     <module>invensense:modm:driver</module>
+    <module>modm:build:cmake</module>
   </modules>
 </library>
